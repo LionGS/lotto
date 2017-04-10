@@ -1,2 +1,14 @@
-<h1>당첨번호</h1>
-<h1><%= @lotto %> + <%= @bonus %></h1>
+<div class="container">
+  <h1>
+    <span class="badge badge-warning">당첨번호</span>
+  </h1>
+  <div class="container">
+    <div class="row">
+      <% @lotto.each.with_index do |number,index| %>
+        <div class="<%=@color[index]%>"><div class="align-self-center"><span style="font-size:50px"><%= number %></span></div></div>
+      <% end %>
+      <div class="align-self-center"><span style="font-size:50px">+</span></div>
+      <div class="<%= @bonus_color %>"><div class="align-self-center"><span style="font-size:50px"><%= @bonus %></span></div></div>
+    </div>
+  </div>
+</div>
