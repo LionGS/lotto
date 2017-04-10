@@ -3,6 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready ->
   $("#lotto").click ->
-    $("#hide").show()
-    $(this).hide()
+    $("#hide").show(1000)
     $("#reset").show()
+    $(this).hide()
