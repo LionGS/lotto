@@ -2,13 +2,19 @@
   <h1>
     <span class="badge badge-warning">당첨번호</span>
   </h1>
-  <div class="container">
-    <div class="row">
-      <% @lotto.each.with_index do |number,index| %>
-        <div class="<%=@color[index]%>"><div class="align-self-center"><span style="font-size:50px"><%= number %></span></div></div>
-      <% end %>
-      <div class="align-self-center"><span style="font-size:50px">+</span></div>
-      <div class="<%= @bonus_color %>"><div class="align-self-center"><span style="font-size:50px"><%= @bonus %></span></div></div>
+  <div class="row">
+    <div class="container " id="hide" style="display: none">
+      <div class="row justify-content-center">
+        <% @lotto.each.with_index do |number,index| %>
+          <div class="col-1 <%=@color[index]%>"><div class="align-self-center"><span style="font-size:50px"><%= number %></span></div></div>
+        <% end %>
+        <div class="col-1 align-self-center"><span style="font-size:50px">+</span></div>
+        <div class="col-1 <%= @bonus_color %>"><div class="align-self-center"><span style="font-size:50px"><%= @bonus %></span></div></div>
+      </div>
     </div>
+  </div>
+  <div class="row justify-content-center">
+      <button type="button" id="lotto" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">추첨 결과 보기</button>
+      <a href="home" id="reset" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="display:none">다시 추첨하기</a>
   </div>
 </div>
