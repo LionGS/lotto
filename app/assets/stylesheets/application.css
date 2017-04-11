@@ -19,37 +19,37 @@
  }
 
  .orange {
-    /*height: 100px;
-    width: 100px;*/
+    height: 100px;
+    width: 100px;
     /*border-radius: 100%;*/
     background-image: radial-gradient(circle at left top,white 10%,#FFBF00 90%);
     color: white;
 }
 
 .blue {
-   /*height: 100px;
-   width: 100px;*/
+   height: 100px;
+   width: 100px;
    /*border-radius: 100%;*/
    background-image: radial-gradient(circle at left top,white 10%,#0000FF 90%);
    color: white;
 }
 .red {
-   /*height: 100px;
-   width: 100px;*/
+   height: 100px;
+   width: 100px;
    /*border-radius: 100%;*/
    background-image: radial-gradient(circle at left top,white 10%,#FF0000 90%);
    color: white;
 }
 .gray {
-   /*height: 100px;
-   width: 100px;*/
+   height: 100px;
+   width: 100px;
    /*border-radius: 100%;*/
    background-image: radial-gradient(circle at left top,white 10%,#BDBDBD 90%);
    color: white;
 }
 .green {
-   /*height: 100px;
-   width: 100px;*/
+   height: 100px;
+   width: 100px;
    /*border-radius: 100%;*/
    background-image: radial-gradient(circle at left top,white 10%,#00FF00 90%);
    color: white;

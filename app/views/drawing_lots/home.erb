@@ -8,14 +8,14 @@
         <span class="badge badge-warning">당첨번호</span>
       </h1>
       <hr class="my-4">
-      <div class="row" style="height:100px">
+      <div class="row" style="height:200px">
         <div class="container " id="hide" style="display: none">
           <div class="row justify-content-center">
             <% @lotto.each.with_index do |number,index| %>
-              <div class="rounded-circle col-1 mx-2 <%=@color[index]%>" id="num<%=index%>"><div class="align-self-center"><span style="font-size:50px"><%= number %></span></div></div>
+              <div class="rounded-circle mx-2 <%=@color[index]%>" id="num<%=index%>"><div class="align-self-center"><span style="font-size:50px"><%= number %></span></div></div>
             <% end %>
-            <div class="col-1 align-self-center"><div class="align-self-center"><span style="font-size:50px">+</span></div></div>
-            <div class="rounded-circle col-1 mx-2 <%= @bonus_color %>" id="num6"><div class="align-self-center"><span style="font-size:50px"><%= @bonus %></span></div></div>
+            <div class="align-self-center"><div class="align-self-center"><span style="font-size:50px">+</span></div></div>
+            <div class="rounded-circle mx-2 <%= @bonus_color %>" id="num6"><div class="align-self-center"><span style="font-size:50px"><%= @bonus %></span></div></div>
           </div>
         </div>
       </div>
